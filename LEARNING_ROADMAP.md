@@ -7,20 +7,20 @@
 
 ## 总览表
 
-| 周次 | 主题 | 学到什么 | 做出什么 | 对应 JD |
+| 周次 | 主题 | 学到什么 | 做出什么 |
 |---|---|---|---|---|
-| W1 | Python 补课 + LLM API 入门 | Python 工程能力、LLM API、流式输出 | 3 个 prompt 实验脚本、能跑的最小 ChatGPT 客户端 | JD 任职要求 |
-| W2 | Prompt 工程 + 业务组件库雏形 | Few-shot / CoT / ReAct / 结构化输出 | `prompts/` 模板库 + `llm/` 客户端封装 | JD 2 / 4 / 加分项 |
-| W3 | Web 框架（FastAPI）+ 项目骨架 | FastAPI、Pydantic、依赖注入、流式响应 | 项目骨架 + 健康检查接口 + 配置管理 | JD 任职要求 |
-| W4 | RAG 基础：文档加载 + 分块 + 检索 | Embedding、向量检索、语义相似度 | 文档上传 + 检索 + 生成的最小 RAG Demo | JD 1 / 加分项 RAG |
-| W5 | RAG 进阶：检索增强 + 重排序 | HyDE / Multi-Query / Rerank / 评估 | 教育讲义 RAG 模块 v1 | JD 1 |
-| W6 | Agent 入门：Function Calling + ReAct | Tool Use、JSON Schema、Agent Loop | 单 Agent Demo（带 2-3 个工具） | JD 4 / 6 / 加分项 |
-| W7 | 教学辅导 Agent（核心模块） | 多轮对话、个性化辅导、苏格拉底式提问 | 教学辅导 Agent v1 | JD 1 / 4 |
-| W8 | 智能答疑系统（核心模块） | 意图识别、多路召回、流式生成 | 答疑接口 + 多意图分类 | JD 1 |
-| W9 | AI 评测体系（JD 最特别点） | 测试集构造、指标定义、A/B 框架 | 评测模块 + 200 题数据集 + 基线对比报告 | **JD 5** |
-| W10 | 多 Agent 编排（LangGraph） | 工作流、状态机、多 Agent 协作 | AI 实训工作台：讲师 Agent + 评估 Agent | JD 6 |
-| W11 | LLM 业务组件库沉淀 | 可复用 Chain、提示词版本管理、错误兜底 | 组件库 v1 + 单元测试 | JD 4 |
-| W12 | 整合 + 部署 + 简历包装 | Streamlit 前端、Docker、README | 可演示的 MVP + 简历文案 + 技术博客 | JD 3 / 加分项 |
+| W1 | Python 补课 + LLM API 入门 | Python 工程能力、LLM API、流式输出 | 3 个 prompt 实验脚本、能跑的最小 ChatGPT 客户端 |
+| W2 | Prompt 工程 + 业务组件库雏形 | Few-shot / CoT / ReAct / 结构化输出 | `prompts/` 模板库 + `llm/` 客户端封装 |
+| W3 | Web 框架（FastAPI）+ 项目骨架 | FastAPI、Pydantic、依赖注入、流式响应 | 项目骨架 + 健康检查接口 + 配置管理 |
+| W4 | RAG 基础：文档加载 + 分块 + 检索 | Embedding、向量检索、语义相似度 | 文档上传 + 检索 + 生成的最小 RAG Demo |
+| W5 | RAG 进阶：检索增强 + 重排序 | HyDE / Multi-Query / Rerank / 评估 | 教育讲义 RAG 模块 v1 |
+| W6 | Agent 入门：Function Calling + ReAct | Tool Use、JSON Schema、Agent Loop | 单 Agent Demo（带 2-3 个工具） |
+| W7 | 教学辅导 Agent（核心模块） | 多轮对话、个性化辅导、苏格拉底式提问 | 教学辅导 Agent v1 |
+| W8 | 智能答疑系统（核心模块） | 意图识别、多路召回、流式生成 | 答疑接口 + 多意图分类 |
+| W9 | AI 评测体系（JD 最特别点） | 测试集构造、指标定义、A/B 框架 | 评测模块 + 200 题数据集 + 基线对比报告 |
+| W10 | 多 Agent 编排（LangGraph） | 工作流、状态机、多 Agent 协作 | AI 实训工作台：讲师 Agent + 评估 Agent |
+| W11 | LLM 业务组件库沉淀 | 可复用 Chain、提示词版本管理、错误兜底 | 组件库 v1 + 单元测试 |
+| W12 | 整合 + 部署 + 简历包装 | Streamlit 前端、Docker、README | 可演示的 MVP + 简历文案 + 技术博客 |
 
 **12 周后**：一个有 demo、有数据、有 README、有评测报告、能在简历讲清故事的项目。
 
