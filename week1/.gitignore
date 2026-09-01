@@ -1,0 +1,10 @@
+# 教育阶段工程类项目常见忽略
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+outputs/
+chroma_db/
+*.log

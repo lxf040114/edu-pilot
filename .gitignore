@@ -1,0 +1,6 @@
+.venv/
+.chroma/
+__pycache__/
+.env
+week*/.venv/
+week*/.chroma/

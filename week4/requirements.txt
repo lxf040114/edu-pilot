@@ -1,0 +1,9 @@
+chromadb
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+loguru
+pydantic
+pydantic-settings
+httpx

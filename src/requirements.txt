@@ -1,0 +1,10 @@
+openai
+python-dotenv
+pydantic-settings
+loguru
+httpx
+fastapi
+uvicorn[standard]
+chromadb
+sentence-transformers
+langgraph

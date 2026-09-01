@@ -1,0 +1,4 @@
+# W10 复用 week5 的 venv（已额外安装 langgraph）。
+# 不单独建 venv，直接：
+#   ..\week5\.venv\Scripts\python.exe run.py
+# 依赖：week5/requirements.txt + langgraph

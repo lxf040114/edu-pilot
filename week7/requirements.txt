@@ -1,0 +1,4 @@
+# W7 复用 week5 的 venv（向量 RAG 需要 torch/chroma/sentence-transformers）。
+# 不单独建 venv，直接：
+#   ..\week5\.venv\Scripts\python.exe demo_tutoring.py
+# 依赖清单见 week5/requirements.txt

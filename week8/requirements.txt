@@ -1,0 +1,4 @@
+# W8 复用 week5 的 venv（向量 RAG 需要 torch/chroma/sentence-transformers + fastapi）。
+# 不单独建 venv，直接：
+#   ..\week5\.venv\Scripts\python.exe test_api.py
+# 依赖清单见 week5/requirements.txt（已含 fastapi + uvicorn）
