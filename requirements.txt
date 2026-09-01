@@ -1,8 +1,4 @@
+# 轻量版依赖（Streamlit Cloud 部署 app_lite.py 用）
+# 完整版依赖见 src/requirements.txt（含 chromadb / sentence-transformers / langgraph，本地跑 app.py 用）
 streamlit
 openai
-python-dotenv
-pydantic-settings
-loguru
-chromadb
-sentence-transformers
-langgraph
