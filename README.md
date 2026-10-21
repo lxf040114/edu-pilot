@@ -21,7 +21,7 @@
 | **使用对象** | 假设面向"参加 AI 实训的学生"和"实训讲师" |
 | **可演示场景** | 学生上传讲义 → 答疑 Agent 回答 → 教学 Agent 出题 → 评测体系打分 |
 | **代码量目标** | ~3000-5000 行 Python（FastAPI 后端 + Streamlit 前端 + 文档 + 测试） |
-| **技术栈** | Python · FastAPI · LangChain / LlamaIndex · Chroma (本地向量库) · OpenAI/Anthropic API · Redis · Streamlit |
+| **技术栈** | Python · FastAPI · OpenAI 兼容 API（DeepSeek）· LangGraph · Chroma · BGE-zh · Pydantic · Streamlit |
 
 ---
 
@@ -38,8 +38,8 @@
 
 ## 这项目打完，简历能写什么
 
-- ✅ "独立从 0 到 1 搭建 RAG 教育知识库（LangChain + Chroma），支持文档解析、分块策略、混合检索"
+- ✅ "独立从 0 到 1 搭建 RAG 教育知识库（BGE-zh 中文嵌入 + Chroma 向量检索），支持文档解析、分块策略、检索"
 - ✅ "基于 Function Calling 设计教学辅导 Agent，支持多轮对话、工具调度、ReAct 推理"
-- ✅ "搭建 LLM 评测体系：自建 200+ 题教学问答测试集，对 3 个模型做基线对比，量化指标提升 23%"
-- ✅ "用 LangGraph 实现多 Agent 编排：讲师 Agent + 评估 Agent 协作，覆盖备课/出题/批改场景"
-- ✅ "FastAPI 提供 8 个核心接口，Streamlit 前端可演示，覆盖 Web 全栈"
+- ✅ "搭建 LLM 评测体系：自建 8 题教学问答测试集 + LLM-as-judge，A/B 对比无 RAG vs 有 RAG，定位并修复检索切片缺陷"
+- ✅ "用 LangGraph 实现多 Agent 编排：讲师 / 学生 / 评估三 Agent 协作，覆盖备课/出题/答题/批改场景"
+- ✅ "FastAPI 提供核心接口（答疑 / 流式 / 评测 / 健康检查），Streamlit 前端可演示，覆盖 Web 全栈"

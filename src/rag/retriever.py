@@ -1,6 +1,11 @@
-"""向量检索：把教材切片入库（BGE 嵌入），做语义检索。"""
+"""向量检索：把教材切片入库（BGE 嵌入），做语义检索。
+
+切片策略：按 markdown 标题（# / ## / ###）切分，让每个知识点（## 标题 + 内容）自成完整
+chunk，避免"答案被切碎在多个 chunk"导致检索召回不完整（W9 深化发现的根因）。
+"""
 import glob
 import os
+import re
 
 import chromadb
 
@@ -15,6 +20,12 @@ _client = chromadb.PersistentClient(path=CHROMA_DIR)
 _col = _client.get_or_create_collection("edu_kb", embedding_function=_embed)
 
 
+def _split_by_heading(text: str) -> list[str]:
+    """按 markdown 标题（# / ## / ###）切分，每个标题块作为一个 chunk。"""
+    parts = re.split(r"(?=^#{1,3}\s)", text, flags=re.MULTILINE)
+    return [p.strip() for p in parts if len(p.strip()) > 10]
+
+
 def ingest():
     """懒加载：首次调用把教材切片入库。"""
     if _col.count() > 0:
@@ -22,7 +33,7 @@ def ingest():
     docs, ids, metas = [], [], []
     for fp in sorted(glob.glob(os.path.join(KB_DIR, "*.md"))):
         text = open(fp, encoding="utf-8").read()
-        chunks = [c.strip() for c in text.split("\n\n") if len(c.strip()) > 10]
+        chunks = _split_by_heading(text)
         for i, c in enumerate(chunks):
             docs.append(c)
             ids.append(f"{os.path.basename(fp)}#{i}")
